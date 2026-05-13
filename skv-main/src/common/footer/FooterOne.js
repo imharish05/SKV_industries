@@ -66,18 +66,18 @@ export default class FooterOne extends React.Component {
                                                 <div className="footer-widget__column footer-widget__explore">
                                                     <h2 className="footer-widget__title text-nowrap">Our Services</h2>
                                                     <ul className="footer-widget__explore-list">
-                                                        <li className="footer-widget__explore-list-item"><Link to="/">Fabrication Unit</Link></li>
-                                                        <li className="footer-widget__explore-list-item"><Link to="/">CNC Cutting</Link></li>
-                                                        <li className="footer-widget__explore-list-item"><Link to="/">Saw Processing</Link></li>
-                                                        <li className="footer-widget__explore-list-item"><Link to="/">Composite Girder Joint Processing</Link></li>
-                                                        <li className="footer-widget__explore-list-item"><Link to="/">Trail Assembly</Link></li>
-                                                        <li className="footer-widget__explore-list-item"><Link to="/">Gird Blasting</Link></li>
-                                                        <li className="footer-widget__explore-list-item"><Link to="/">Metalizing</Link></li>
-                                                        <li className="footer-widget__explore-list-item"><Link to="/">Zinc Chromate Painting</Link></li> 
-                                                        <li className="footer-widget__explore-list-item"><Link to="/">PEB Sheds</Link></li> 
-                                                        <li className="footer-widget__explore-list-item"><Link to="/">Bowstring</Link></li> 
-                                                        <li className="footer-widget__explore-list-item"><Link to="/">Launching</Link></li> 
-                                                        <li className="footer-widget__explore-list-item"><Link to="/">ISRO Crane Girder</Link></li> 
+                                                        <li className="footer-widget__explore-list-item"><Link to="/projects">Fabrication Unit</Link></li>
+                                                        <li className="footer-widget__explore-list-item"><Link to="/projects">CNC Cutting</Link></li>
+                                                        <li className="footer-widget__explore-list-item"><Link to="/projects">Saw Processing</Link></li>
+                                                        <li className="footer-widget__explore-list-item"><Link to="/projects">Composite Girder Joint Processing</Link></li>
+                                                        <li className="footer-widget__explore-list-item"><Link to="/projects">Trail Assembly</Link></li>
+                                                        <li className="footer-widget__explore-list-item"><Link to="/projects">Gird Blasting</Link></li>
+                                                        <li className="footer-widget__explore-list-item"><Link to="/projects">Metalizing</Link></li>
+                                                        <li className="footer-widget__explore-list-item"><Link to="/projects">Zinc Chromate Painting</Link></li> 
+                                                        <li className="footer-widget__explore-list-item"><Link to="/projects">PEB Sheds</Link></li> 
+                                                        <li className="footer-widget__explore-list-item"><Link to="/projects">Bowstring</Link></li> 
+                                                        <li className="footer-widget__explore-list-item"><Link to="/projects">Launching</Link></li> 
+                                                        <li className="footer-widget__explore-list-item"><Link to="/projects">ISRO Crane Girder</Link></li> 
                                                     </ul>
                                                 </div>
                                             </div>
