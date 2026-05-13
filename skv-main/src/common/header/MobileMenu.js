@@ -79,7 +79,7 @@ const MobileMenu = () => {
                     {menuData.map((item, index) => (
                         <SidebarLink to={publicUrl + item.path} key={index} onClick={showSidebar}>
                             <span>{item.title}</span>
-                            <AiIcons.AiOutlineRight style={{fontSize: '12px', opacity: 0.5}} />
+                           
                         </SidebarLink>
                     ))}
                 </div>
