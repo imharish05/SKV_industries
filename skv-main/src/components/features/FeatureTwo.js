@@ -79,11 +79,6 @@ const features = [
                 </div>
                 <h3><Link to={process.env.PUBLIC_URL + `/`}>{item.title}</Link></h3>
                 <p>{item.text}</p>
-                <div className="btn-box">
-                    <Link to={process.env.PUBLIC_URL + `/`}>
-                        <span className="icon-right-arrow-1"></span>
-                    </Link>
-                </div>
             </div>
         </div>
     ))}

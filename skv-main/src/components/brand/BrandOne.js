@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, FreeMode } from "swiper"; // Ensure these modules are imported
 
@@ -63,13 +62,13 @@ export default class BrandOne extends React.Component {
                         {certificates.map((item) => (
                             <SwiperSlide key={item.id}>
                                 <div className="brand-one__single p-2 bg-white rounded">
-                                    <Link to="/">
+                                    
                                         <img 
                                             className='img-fluid w-50' 
                                             src={`${publicUrl}assets/images/certificates/${item.img}`} 
                                             alt={`Certificate ${item.id}`} 
                                         />
-                                    </Link>
+                             
                                 </div>
                             </SwiperSlide>
                         ))}
