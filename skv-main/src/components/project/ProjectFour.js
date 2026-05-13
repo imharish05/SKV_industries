@@ -79,7 +79,7 @@ const projectData = [
         img: "assets/images/project/project8.png",
         mediaUrl: "assets/images/project/project_8.mp4",
         type: "video",
-        title: "Bow String"
+        title: "Bowstring Bridge"
     },
     {
         img: "assets/images/project/project16.jpeg",
