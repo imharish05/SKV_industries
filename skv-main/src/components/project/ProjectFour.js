@@ -1,6 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
 export default class ProjectFour extends React.Component {
     constructor(props) {
         super(props);
@@ -10,7 +8,6 @@ export default class ProjectFour extends React.Component {
         };
     }
 
-    // Handlers for opening and closing the modal
     openModal = (e, item) => {
         e.preventDefault();
         this.setState({
@@ -29,54 +26,174 @@ export default class ProjectFour extends React.Component {
     render() {
         let publicUrl = process.env.PUBLIC_URL + '/';
 
-        // Updated Data: Added 'type' (image/video) and 'mediaUrl' (the actual file to open in the popup)
-        // If mediaUrl is not provided, it falls back to using the 'img' thumbnail.
-        const projectData = [
-            {
-                img: "assets/images/project/project-v1-img1.jpg",
-                mediaUrl: "assets/images/project/project-v1-img1.jpg",
-                type: "image",
-                title: "Bowstring Girder — Patchur",
-                content: "Bowstring Girder"
-            },
-            {
-                img: "assets/images/project/project-v1-img2.jpg",
-                mediaUrl: "assets/videos/sample-video.mp4", // Replace with your actual video path
-                type: "video",
-                title: "ROB — Perungalathur",
-                content: "Road Over Bridge"
-            },
-            {
-                img: "assets/images/project/project-v1-img3.jpg",
-                type: "image",
-                title: "ROB — Paranur",
-                content: "Road Over Bridge"
-            },
-            {
-                img: "assets/images/project/project-v1-img4.jpg",
-                mediaUrl: "assets/videos/hal-plant.mp4", // Replace with your actual video path
-                type: "video",
-                title: "HAL Helicopter Plant",
-                content: "PEB Structure"
-            },
-            {
-                img: "assets/images/project/project-v1-img5.jpg",
-                type: "image",
-                title: "ISRO Crane Girder — Kerala",
-                content: "Special Structure"
-            },
-            {
-                img: "assets/images/project/project-v1-img6.jpg",
-                type: "image",
-                title: "Loco Paint Shop — Chennai",
-                content: "PEB Structure"
-            }
-        ];
+const projectData = [
+    {
+        img: "assets/images/project/project12.png",
+        mediaUrl: "assets/images/project/project_12.mp4",
+        type: "video",
+        title: "FOB — Hassan"
+    },
+    {
+        img: "assets/images/project/Composite-grider.jpeg",
+        type: "image",
+        title: "Composite Girder — Patchur",
+        content: "Bowstring Girder"
+    },
+    {
+        img: "assets/images/project/project11.png",
+        mediaUrl: "assets/images/project/project_11.mp4",
+        type: "video",
+        title: "FOB — Mangalore"
+    },
+    {
+        img: "assets/images/project/project13.jpeg",
+        type: "image",
+        title: "Vennandur",
+        content: "Road Over Bridge"
+    },
+    {
+        img: "assets/images/project/project10.png",
+        mediaUrl: "assets/images/project/project_10.mp4",
+        type: "video",
+        title: "FOB"
+    },
+    {
+        img: "assets/images/project/project14.jpeg",
+        type: "image",
+        title: "Chennagiri",
+        content: "Road Over Bridge"
+    },
+    {
+        img: "assets/images/project/project9.png",
+        mediaUrl: "assets/images/project/project_9.mp4",
+        type: "video",
+        title: "Arch Erction"
+    },
+    {
+        img: "assets/images/project/project15.jpeg",
+        type: "image",
+        title: "Chennagiri",
+        content: "Road Over Bridge"
+    },
+    {
+        img: "assets/images/project/project8.png",
+        mediaUrl: "assets/images/project/project_8.mp4",
+        type: "video",
+        title: "Bow String"
+    },
+    {
+        img: "assets/images/project/project16.jpeg",
+        type: "image",
+        title: "Chennagiri",
+        content: "Road Over Bridge"
+    },
+    {
+        img: "assets/images/project/project7.png",
+        mediaUrl: "assets/images/project/project_7.mp4",
+        type: "video",
+        title: "Road Over Bridge"
+    },
+    {
+        img: "assets/images/project/project17.jpeg",
+        type: "image",
+        title: "Chennagiri",
+        content: "Road Over Bridge"
+    },
+    {
+        img: "assets/images/project/project6.png",
+        mediaUrl: "assets/images/project/project_6.mp4",
+        type: "video",
+        title: "Gas Metal Arc Welding"
+    },
+    {
+        img: "assets/images/project/project18.jpeg",
+        type: "image",
+        title: "Vennandur",
+        content: "Road Over Bridge"
+    },
+    {
+        img: "assets/images/project/project5.png",
+        mediaUrl: "assets/images/project/project_5.mp4",
+        type: "video",
+        title: "Launcher"
+    },
+    {
+        img: "assets/images/project/project19.jpeg",
+        type: "image",
+        title: "Vennandur",
+        content: "Road Over Bridge"
+    },
+    {
+        img: "assets/images/project/project4.png",
+        mediaUrl: "assets/images/project/project_4.mp4",
+        type: "video",
+        title: "Launching"
+    },
+    {
+        img: "assets/images/project/project3.png",
+        mediaUrl: "assets/images/project/project_3.mp4",
+        type: "video",
+        title: "Bow String Arc"
+    },
+    {
+        img: "assets/images/project/project2.png",
+        mediaUrl: "assets/images/project/project_2.mp4",
+        type: "video",
+        title: "Shot Blasting"
+    },
+    {
+        img: "assets/images/project/project1.png",
+        mediaUrl: "assets/images/project/project_1.mp4",
+        type: "video",
+        title: "Metalizing"
+    }
+];
 
         return (
             <>
-                {/* CSS for the Custom React Modal */}
                 <style>{`
+                    /* ── Grid uniform-height fix ── */
+                    .project-one__single {
+                        display: flex;
+                        flex-direction: column;
+                        height: 100%;
+                    }
+
+                    .project-one__single-img {
+                        display: flex;
+                        flex-direction: column;
+                        height: 100%;
+                    }
+
+                    /*
+                     * KEY FIX: fixed height container + object-fit: cover
+                     * Every card thumbnail is exactly 280px tall regardless of
+                     * the source image's aspect ratio.
+                     * Adjust the height value to suit your design.
+                     */
+                    .project-one__single-img .inner {
+                        position: relative;
+                        width: 100%;
+                        height: 280px;          /* ← uniform height */
+                        overflow: hidden;
+                        flex-shrink: 0;
+                    }
+
+                    .project-one__single-img .inner img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;      /* ← fills the box, crops edges */
+                        object-position: center;
+                        display: block;
+                        transition: transform 0.4s ease;
+                    }
+
+                    /* Subtle zoom on hover keeps the interaction alive */
+                    .project-one__single:hover .inner img {
+                        transform: scale(1.05);
+                    }
+
+                    /* ── Modal styles (unchanged) ── */
                     .custom-media-modal {
                         position: fixed;
                         top: 0;
@@ -104,7 +221,7 @@ export default class ProjectFour extends React.Component {
                         overflow: hidden;
                         box-shadow: 0 10px 30px rgba(0,0,0,0.5);
                     }
-                    .custom-media-content img, 
+                    .custom-media-content img,
                     .custom-media-content video {
                         max-width: 100%;
                         max-height: 85vh;
@@ -124,17 +241,16 @@ export default class ProjectFour extends React.Component {
                         transition: 0.3s;
                     }
                     .custom-modal-close:hover {
-                        color: #ff5722; /* Change to your brand color */
+                        color: #ff5722;
                     }
                     .media-icon {
                         width: 24px;
                         height: 24px;
-                        fill: #ff5722 !important;;
+                        fill: #ff5722 !important;
                     }
-                         .media-icon:hover{
-                         color :  #ff5722 !important;
-                         }
-                    /* Wrapper for the close button to ensure it sits above the media frame */
+                    .media-icon:hover {
+                        color: #ff5722 !important;
+                    }
                     .modal-wrapper {
                         position: relative;
                         width: 100%;
@@ -143,23 +259,32 @@ export default class ProjectFour extends React.Component {
                 `}</style>
 
                 <section className="project-one-sec project-one-sec--three">
+                    <div className="sec-title text-center">
+                            <div className="sec-title__tagline">
+                                <span className="left"></span>
+                                <h6>OUR PROJECTS</h6> <span className="right"></span>
+                            </div>
+                      <h2 className="sec-title__title" style={{color : "black"}}>Our Overall Projects </h2>
+                        </div>
                     <div className="container">
                         <div className="row">
                             {projectData.map((item, index) => (
-                                <div className="col-xl-4 col-lg-4 col-md-6" key={index}>
-                                    <div className="project-one__single wow fadeInUp" data-wow-delay={`${index * 100}ms`} data-wow-duration="1500ms">
+                                <div className="col-xl-4 col-lg-4 col-md-6 p-2" key={index}>
+                                    <div
+                                        className="project-one__single wow fadeInUp"
+                                        data-wow-delay={`${index * 100}ms`}
+                                        data-wow-duration="1500ms"
+                                    >
                                         <div className="project-one__single-img">
                                             <div className="inner">
-                                                {/* Thumbnail Image */}
                                                 <img src={publicUrl + item.img} alt={item.title} />
-                                                
+
                                                 <div className="project-one__link">
-                                                    <a 
-                                                        href="#!" 
+                                                    <a
+                                                        href="#!"
                                                         onClick={(e) => this.openModal(e, item)}
-                                                        style={{ display: 'flex', alignItems: 'center', justifyContent: 'center'}}
+                                                        style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
                                                     >
-                                                        {/* Conditional Rendering: Play Icon for Video, Eye Icon for Image */}
                                                         {item.type === 'video' ? (
                                                             <svg className="media-icon" viewBox="0 0 384 512">
                                                                 <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
@@ -172,13 +297,11 @@ export default class ProjectFour extends React.Component {
                                                     </a>
                                                 </div>
                                             </div>
+
                                             <div className="content-box">
-                                                <h2>
-                                                    <Link to={process.env.PUBLIC_URL + `/portfolio-details`}>
-                                                        {item.title}
-                                                    </Link>
+                                                <h2 style={{ color: "white" }}>
+                                                    {item.title}
                                                 </h2>
-                                                <p>{item.content}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -188,27 +311,24 @@ export default class ProjectFour extends React.Component {
                     </div>
                 </section>
 
-                {/* React Modal Portal */}
                 {this.state.isModalOpen && this.state.activeMedia && (
                     <div className="custom-media-modal" onClick={this.closeModal}>
                         <div className="modal-wrapper">
                             <button className="custom-modal-close" onClick={this.closeModal}>&times;</button>
                             <div className="custom-media-content" onClick={(e) => e.stopPropagation()}>
-                                
                                 {this.state.activeMedia.type === 'video' ? (
-                                    <video 
-                                        src={publicUrl + (this.state.activeMedia.mediaUrl || this.state.activeMedia.img)} 
-                                        controls 
-                                        autoPlay 
+                                    <video
+                                        src={publicUrl + (this.state.activeMedia.mediaUrl || this.state.activeMedia.img)}
+                                        controls
+                                        autoPlay
                                         style={{ width: '100%' }}
                                     />
                                 ) : (
-                                    <img 
-                                        src={publicUrl + (this.state.activeMedia.mediaUrl || this.state.activeMedia.img)} 
-                                        alt={this.state.activeMedia.title} 
+                                    <img
+                                        src={publicUrl + (this.state.activeMedia.mediaUrl || this.state.activeMedia.img)}
+                                        alt={this.state.activeMedia.title}
                                     />
                                 )}
-                                
                             </div>
                         </div>
                     </div>

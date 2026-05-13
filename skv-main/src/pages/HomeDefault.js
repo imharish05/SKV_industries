@@ -6,12 +6,14 @@ import ServiceThree from "../components/services/ServiceThree";
 import FeatureFour from "../components/features/FeatureFour";
 import TestimonialThree from "../components/testimonial/TestimonialThree";
 import FooterOne from "../common/footer/FooterOne";
+import VideoSection from "../components/VideoSection/VideoSection";
 
 const HomeDefault = () => {
     return (
         <>
             <Header />
             <HeroOne />
+            <VideoSection/>
             <ServiceThree />
             <ProjectThree />
             <FeatureFour />

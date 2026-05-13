@@ -206,20 +206,13 @@ const ContactForm = () => {
                                             <textarea placeholder="Your Message" value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
                                             <ErrorMsg field="message" />
                                         </div>
-                                                                                   <button
-
+                                        <button
                                                 className="thm-btn comment-form__btn"
-
                                                 data-text="Send Message +"
-
                                                 type="submit"
-
                                                 disabled={loading}
-
                                             >
-
                                                 {loading ? "Sending..." : "Send Message +"}
-
                                             </button>
                                     </div>
                                 </div>
