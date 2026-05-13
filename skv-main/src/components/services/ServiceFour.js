@@ -6,7 +6,7 @@ const servicesData = [
     id: 1,
     name: "Steel Bridge Fabrication",
     slug: "steel-bridge-fabrication",
-    image: "assets/images/services/steel-bridge-fabrication.jpg",
+    image: "assets/images/services/trial-assembly-bridge-girders-aerial.jpg",
     description:
       "Fabrication of Road Over Bridges using composite and plate girders, compliant with RDSO standards. We deliver precision-engineered girders across spans ranging from 14 to 53 meters, trusted by Southern Railway and NHAI.",
   },
@@ -14,7 +14,7 @@ const servicesData = [
     id: 2,
     name: "Bowstring Arch Girder",
     slug: "bowstring-arch-girder",
-    image: "assets/images/services/bowstring-arch-girder.jpg",
+    image: "assets/images/services/bowstring-grider.png",
     description:
       "Design and fabrication of bowstring arch girders for railway bridges. We have delivered 42-meter RDSO-approved spans for South Western Railway with in-house trial assembly and CNC precision cutting.",
   },
@@ -30,7 +30,7 @@ const servicesData = [
     id: 4,
     name: "Pre-Engineered Buildings (PEB)",
     slug: "pre-engineered-buildings",
-    image: "assets/images/services/pre-engineered-buildings.jpg",
+    image: "assets/images/services/fabrication-unit-aerial-view-with-signboard.png",
     description:
       "Turnkey PEB structures from hatchery plants and spinning mills to government warehouses and HAL manufacturing facilities. Completed 25+ projects ranging from 400 sq.m to 11,250 sq.m for private and government clients.",
   },
@@ -38,7 +38,7 @@ const servicesData = [
     id: 5,
     name: "Crane Girder Fabrication",
     slug: "crane-girder-fabrication",
-    image: "assets/images/services/crane-girder.jpg",
+    image: "assets/images/services/saw-beam-assembly-welding-workers.jpg",
     description:
       "Precision crane girders for critical applications including ISRO's VSSC facility in Thumba, Kerala, executed through TATA Projects. Fabricated with strict dimensional tolerances for overhead crane systems.",
   },
@@ -46,23 +46,23 @@ const servicesData = [
     id: 6,
     name: "CNC Cutting & Steel Processing",
     slug: "cnc-cutting-steel-processing",
-    image: "assets/images/services/cnc-cutting.jpg",
+    image: "assets/images/services/cnc-messer-plasma-cutting-machine-in-action.jpg",
     description:
       "High-precision structural steel cutting using CNC plasma machines capable of handling up to 300mm thickness. In-house CNC drilling, beam welding, and warpage correction ensure consistent quality across all components.",
   },
   {
     id: 7,
-    name: "Grit Blasting & Surface Treatment",
+    name: "Grit Blasting & Painting",
     slug: "grit-blasting-surface-treatment",
-    image: "assets/images/services/grit-blasting.jpg",
+    image: "assets/images/services/zinc-chromate-yellow-painting-girders-spray.jpg",
     description:
-      "Complete surface protection including grit blasting, zinc metalizing, and zinc chromate painting — all performed in-house. Ensuring long-term corrosion resistance for railway bridges and industrial structures per RDSO standards.",
+      "Complete surface preparation through grit/shot blasting to Sa 2.5 standards, followed by zinc chromate and finish coat painting — all performed in-house. This ensures long-term corrosion resistance for railway bridges and industrial structures, fully compliant with RDSO and client specifications.",
   },
   {
     id: 8,
     name: "Structural Steel Erection & Launching",
     slug: "structural-steel-erection",
-    image: "assets/images/services/steel-erection.jpg",
+    image: "assets/images/services/fabrication-unit-aerial-view-trial-assembly.jpg",
     description:
       "Full erection and launching of steel bridge girders using mobile cranes up to 25 tonnes. Our experienced site teams have successfully launched girders over live railway tracks across multiple Southern Railway zones.",
   },
@@ -70,9 +70,25 @@ const servicesData = [
     id: 9,
     name: "Warehouse & Storage Structures",
     slug: "warehouse-storage-structures",
-    image: "assets/images/services/warehouse.jpg",
+    image: "assets/images/services/fabrication-unit-aerial-view-full-campus.jpg",
     description:
       "Civil supply warehouses built for Tamil Nadu Government at Edappadi, Vazhapadi, and Omallur with storage capacities from 1,500 MT to 5,000 MT. Cost-effective, structurally sound storage solutions for government and private clients.",
+  },
+  {
+    id: 10,
+    name: "Metalizing",
+    slug: "metalizing",
+    image: "assets/images/services/metalizing-zinc-spray-white-girders-1.jpg",
+    description:
+      "Thermal spray zinc metalizing applied to all fabricated steel structures for superior long-term corrosion protection. Performed in-house using specialized metalizing equipment, this process meets RDSO and Indian Railways standards for bridge girders, FOBs, and industrial steelwork exposed to harsh environments.",
+  },
+  {
+    id: 11,
+    name: "PEB Roofing",
+    slug: "peb-roofing",
+    image: "assets/images/services/fabrication-unit-aerial-side-view.jpg",
+    description:
+      "Supply and installation of Pre-Engineered Building roofing systems including color-coated steel sheets, purlins, and roof accessories. SKV has delivered complete roofing solutions across industrial sheds, warehouses, hatchery plants, and government storage facilities ranging from 400 sq.m to over 11,000 sq.m.",
   },
 ];
 
