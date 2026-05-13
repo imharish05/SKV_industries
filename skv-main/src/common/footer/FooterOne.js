@@ -30,14 +30,14 @@ export default class FooterOne extends React.Component {
                                                     <div className="footer-widget__about-social-link">
                                                         <ul>
                                                             <li>
-                                                                <a href="https://facebook.com">
+                                                                <a href="https://www.facebook.com/p/SKV-Industriees-100076058082556/"target='_blank'>
                                                                     <span className="first icon-facebook-app-symbol"></span>
                                                                     <span className="second icon-facebook-app-symbol"></span>
                                                                 </a>
                                                             </li>
 
                                                             <li>
-                                                                <a href="https://twitter.com">
+                                                                <a href="https://www.instagram.com/skv_industriees/" target = "_blank">
                                                                     <span className="first fa-brands fa-instagram"></span>
                                                                     <span className="second fa-brands fa-instagram"></span>
                                                                 </a>
@@ -136,7 +136,7 @@ export default class FooterOne extends React.Component {
                                 <div className="col-xl-12">
                                     <div className="footer-one__bottom-inner">
                                         <div className="footer-one__bottom-text">
-                                            <p>Copyright &copy;2026. All rights reserved.<Link to={process.env.PUBLIC_URL + `/`}> Developed By Sai Techno Solutions</Link></p>
+                                            <p>Copyright &copy;2026. All rights reserved.<a href='https://saitechnosolutions.com/' target='_blank'> Developed By Sai Techno Solutions</a></p>
                                         </div>
                                     </div>
                                 </div>
